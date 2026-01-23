@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Senheng VIP Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Senheng VIP Deals Activated">
-    <meta property="og:description" content="Your 70% Cashback rewards are ready.">
-    <meta property="og:image" content="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024">
-    
-    <style>
-        body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
-        .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
-        .logo { width: 140px; margin-bottom: 15px; }
-        .content { padding: 10px 20px 40px 20px; }
-        h2 { font-size: 22px; color: #e60012; margin-bottom: 10px; }
-        p { font-size: 16px; line-height: 1.5; color: #666; }
-        .btn-container { margin-top: 30px; }
-        .btn { display: block; width: 85%; max-width: 320px; margin: 15px auto; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; overflow: hidden; box-sizing: border-box; }
-        .btn-app { background: #e60012; color: white; padding: 18px; border: none; box-shadow: 0 4px 15px rgba(230, 0, 18, 0.3); }
-        .btn-banner-capsule { background: #fff; border: 1px solid #ddd; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 0; }
-        .btn-banner-capsule img { width: 100%; height: 90px; object-fit: cover; display: block; }
-        .banner-label { padding: 10px 0; background: #fff; color: #d4a017; font-size: 14px; border-top: 1px solid #eee; }
-        .btn-web { background: #ffffff; color: #e60012; border: 2px solid #e60012; padding: 16px; }
-        .footer { margin-top: 50px; font-size: 12px; color: #999BA2; padding-bottom: 20px; }
-        /* LOADER REMOVED TO PREVENT ERRORS */
-    </style>
+    <title>Senheng VIP Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
+        
+        /* Header & Tiny Line */
+        .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
+        .logo { width: 140px; margin-bottom: 15px; }
+        
+        /* THE GAP FIX: Moves red text closer to the top line */
+        .content { padding: 10px 20px 40px 20px; }
+        
+        h2 { font-size: 22px; color: #e60012; margin-bottom: 10px; }
+        p { font-size: 16px; line-height: 1.5; color: #666; }
+        
+        /* BUTTON CONTAINER: Ensures laptop/mobile alignment */
+        .btn-container { margin-top: 30px; }
+        
+        /* Standard Capsule Base for all 3 buttons */
+        .btn { 
+            display: block; 
+            width: 85%; 
+            max-width: 320px; 
+            margin: 15px auto; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 16px; 
+            transition: 0.3s; 
+            overflow: hidden; 
+            box-sizing: border-box; 
+        }
+        
+        /* 1. TOP BUTTON (Red App Link) */
+        .btn-app { background: #e60012; color: white; padding: 18px; border: none; box-shadow: 0 4px 15px rgba(230, 0, 18, 0.3); }
+
+        /* 2. MIDDLE CAPSULE (Plan B Banner Card) */
+        .btn-banner-capsule { 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            display: flex; 
+            flex-direction: column; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+            padding: 0; 
+        }
+        .btn-banner-capsule img { 
+            width: 100%; 
+            height: 90px; 
+            object-fit: cover; 
+            display: block; 
+        }
+        .banner-label { 
+            padding: 10px 0; 
+            background: #fff; 
+            color: #d4a017; 
+            font-size: 14px; 
+            border-top: 1px solid #eee; 
+        }
+
+        /* 3. BOTTOM BUTTON (White Website Link) */
+        .btn-web { background: #ffffff; color: #e60012; border: 2px solid #e60012; padding: 16px; }
+        
+        .footer { margin-top: 50px; font-size: 12px; color: #666; padding-bottom: 20px; }
+    </style>
 </head>
 <body>
 
-    <div class="header">
-        <img src="https://static.wixstatic.com/media/169d86_eb3aab1cd90241d0991fb191f8b32d90~mv2.png/v1/fill/w_318,h_318,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Asset%205_4x.png" class="logo">
-    </div>
+    <div class="header">
+        <img src="https://static.wixstatic.com/media/169d86_eb3aab1cd90241d0991fb191f8b32d90~mv2.png/v1/fill/w_318,h_318,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Asset%205_4x.png" class="logo">
+    </div>
 
-    <div class="content">
-        <h2>VIP Deals Activated</h2>
-        <p>Your 70% Cashback rewards are ready.<br>Choose how you want to shop:</p>
+    <div class="content">
+        <h2>VIP Deals Activated</h2>
+        <p>Your 70% Cashback rewards are ready.<br>Choose how you want to shop:</p>
 
-        <div class="btn-container">
-            <a id="link-app" href="#" class="btn btn-app">OPEN IN SENHENG APP</a>
-            
-            <a id="link-catalog" href="#" class="btn btn-banner-capsule">
-                <img src="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024" alt="Untung Gila Banner">
-                <div class="banner-label">70% CASHBACK CATALOGUE (PDF)</div>
-            </a>
-            
-            <a id="link-web" href="#" class="btn btn-web">CONTINUE TO WEBSITE</a>
-        </div>
-    </div>
+        <div class="btn-container">
+            <a href="https://senheng.app.link/product_id?affiliate_id=6371025" class="btn btn-app">OPEN IN SENHENG APP</a>
+            
+            <a href="https://drive.google.com/file/d/1YcXN-fP163G8JDgY9JrZmQu4408ywvky/view?usp=sharing" class="btn btn-banner-capsule">
+                <img src="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024" alt="Untung Gila Banner">
+                <div class="banner-label">70% CASHBACK CATALOGUE (PDF)</div>
+            </a>
+            
+            <a href="https://www.senheng.com.my/shop?affiliate_id=6371025" class="btn btn-web">CONTINUE TO WEBSITE</a>
+        </div>
+    </div>
 
-    <div class="footer">
-        System Status: 
-        <span style="display: inline-block; width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin: 0 5px;"></span>
-        <span id="live-time" style="color: #4CAF50; font-weight: bold;">Updating...</span>
-    </div>
+    <div class="footer" style="color: #999BA2; font-size: 12px; font-weight: normal;">
+        System Status: 
+        <span style="display: inline-block; width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin: 0 5px;"></span>
+        <span id="live-time" style="color: #4CAF50; font-weight: bold;">Updating...</span>
+    </div>
 
-    <script>
-    /* THE EGG: Scrambled Links only */
-    (function(_0x1b2f,_0x4e2d){const _0x1a3a=_0x2633,_0x3a4b=_0x1b2f();while(!![]){try{const _0x3e8e7c=-parseInt(_0x1a3a(0x1b5))/0x1+parseInt(_0x1a3a(0x1b1))/0x2+-parseInt(_0x1a3a(0x1b2))/0x3+parseInt(_0x1a3a(0x1b6))/0x4+parseInt(_0x1a3a(0x1b4))/0x5+-parseInt(_0x1a3a(0x1b3))/0x6+parseInt(_0x1a3a(0x1b0))/0x7;if(_0x3e8e7c===_0x4e2d)break;else _0x3a4b['push'](_0x3a4b['shift']());}catch(_0x22136e){_0x3a4b['push'](_0x3a4b['shift']());}}}(_0x2475,0x43063));function _0x2633(_0x51739c,_0x247511){const _0x24758e=_0x2475();return _0x2633=function(_0x26338e,_0x2b3802){_0x26338e=_0x26338e-0x1b0;let _0x23f7e5=_0x24758e[_0x26338e];return _0x23f7e5;},_0x2633(_0x51739c,_0x247511);}function _0x2475(){const _0x1a3a93=['https://www.senheng.com.my/shop?affiliate_id=6371025','718365wNoMsh','673418vBqGfR','link-catalog','https://drive.google.com/file/d/1YcXN-fP163G8JDgY9JrZmQu4408ywvky/view?usp=sharing','698715vLWhQn','link-web','1526685vSBeoT','https://senheng.app.link/product_id?affiliate_id=6371025','6309875mKIsun','1580970SBeGEn','link-app','48704mZbeYV'];_0x2475=function(){return _0x1a3a93;};return _0x2475();}
+    <script>
+        const updateTimes = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
+        const randomTime = updateTimes[Math.floor(Math.random() * updateTimes.length)];
+        // This keeps "Live" and the time in Green
+        document.getElementById('live-time').innerHTML = "Live (Last Update: " + randomTime + ")";
+    </script>
 
-    window.onload = function() {
-        const _0x1a3a = _0x2633;
-        const appBtn = document.getElementById('link-app');
-        const catBtn = document.getElementById('link-catalog');
-        const webBtn = document.getElementById('link-web');
-
-        if(appBtn) appBtn.href = _0x1a3a(0x1b9);
-        if(catBtn) catBtn.href = _0x1a3a(0x1b8);
-        if(webBtn) webBtn.href = _0x1a3a(0x1b0);
-
-        const updateTimes = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
-        const randomTime = updateTimes[Math.floor(Math.random() * updateTimes.length)];
-        const liveLabel = document.getElementById('live-time');
-        if(liveLabel) liveLabel.innerHTML = "Live (Last Update: " + randomTime + ")";
-    };
-</script>
 </body>
 </html>
