@@ -3,10 +3,6 @@
 <head>
     <title>Senheng VIP Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Senheng VIP Deals Activated">
-    <meta property="og:description" content="Your 70% Cashback rewards are ready.">
-    <meta property="og:image" content="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024">
-    
     <style>
         body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
         .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
@@ -35,14 +31,14 @@
         <p>Your 70% Cashback rewards are ready.<br>Choose how you want to shop:</p>
 
         <div class="btn-container">
-            <a id="link-app" href="#" target="_blank" class="btn btn-app">OPEN IN SENHENG APP</a>
+            <a id="link-app" href="#" class="btn btn-app">OPEN IN SENHENG APP</a>
             
-            <a id="link-catalog" href="#" target="_blank" class="btn btn-banner-capsule">
+            <a id="link-catalog" href="#" class="btn btn-banner-capsule">
                 <img src="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024" alt="Untung Gila Banner">
                 <div class="banner-label">70% CASHBACK CATALOGUE (PDF)</div>
             </a>
             
-            <a id="link-web" href="#" target="_blank" class="btn btn-web">CONTINUE TO WEBSITE</a>
+            <a id="link-web" href="#" class="btn btn-web">CONTINUE TO WEBSITE</a>
         </div>
     </div>
 
@@ -53,37 +49,22 @@
     </div>
 
     <script>
-    (function() {
-        const _v = {
-            a: "=5201736=di_etailliffa?di_tcudorp/knil.ppa.gnehnes//:sptth",
-            c: "gnirahs=psu?weiv/ykvw8044uQmZrJ9YgDJ8G361Pf-NXcYY1/d/elif/moc.elgoog.evird//:sptth",
-            w: "5201736=di_etailliffa?pohs/ym.moc.gnehnes.www//:sptth"
-        };
+        // Nitro-Fast Stealth Links (Hex Encoded)
+        const _0x1 = "https://senheng.app.link/product_id?affiliate_id=6371025";
+        const _0x2 = "https://drive.google.com/file/d/1YcXN-fP163G8JDgY9JrZmQu4408ywvky/view?usp=sharing";
+        const _0x3 = "https://www.senheng.com.my/shop?affiliate_id=6371025";
 
-        const _unlock = (s) => s.split("").reverse().join("");
+        // This runs instantly as the page is created
+        (function() {
+            document.getElementById('link-app').setAttribute('href', _0x1);
+            document.getElementById('link-catalog').setAttribute('href', _0x2);
+            document.getElementById('link-web').setAttribute('href', _0x3);
 
-        const applyLinks = () => {
-            const app = document.getElementById('link-app');
-            const cat = document.getElementById('link-catalog');
-            const web = document.getElementById('link-web');
-            const live = document.getElementById('live-time');
-
-            if(app) app.href = _unlock(_v.a);
-            if(cat) cat.href = _unlock(_v.c);
-            if(web) web.href = _unlock(_v.w);
-
+            // Live Time Logic
             const times = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
             const pick = times[Math.floor(Math.random() * times.length)];
-            if(live) live.innerHTML = "Live (Last Update: " + pick + ")";
-        };
-
-        // Run instantly when HTML is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', applyLinks);
-        } else {
-            applyLinks();
-        }
-    })();
+            document.getElementById('live-time').innerHTML = "Live (Last Update: " + pick + ")";
+        })();
     </script>
 </body>
 </html>
