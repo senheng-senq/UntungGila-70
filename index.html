@@ -4,67 +4,47 @@
     <title>Senheng VIP Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
+        /* Use your Master CSS here (No Loader CSS!) */
+        body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; }
         .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
-        .logo { width: 140px; margin-bottom: 15px; }
+        .logo { width: 140px; }
         .content { padding: 10px 20px 40px 20px; }
-        h2 { font-size: 22px; color: #e60012; margin-bottom: 10px; }
-        p { font-size: 16px; line-height: 1.5; color: #666; }
-        .btn-container { margin-top: 30px; }
-        .btn { display: block; width: 85%; max-width: 320px; margin: 15px auto; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; overflow: hidden; box-sizing: border-box; }
-        .btn-app { background: #e60012; color: white; padding: 18px; border: none; box-shadow: 0 4px 15px rgba(230, 0, 18, 0.3); }
-        .btn-banner-capsule { background: #fff; border: 1px solid #ddd; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 0; }
-        .btn-banner-capsule img { width: 100%; height: 90px; object-fit: cover; display: block; }
-        .banner-label { padding: 10px 0; background: #fff; color: #d4a017; font-size: 14px; border-top: 1px solid #eee; }
+        h2 { font-size: 22px; color: #e60012; }
+        .btn { display: block; width: 85%; max-width: 320px; margin: 15px auto; text-decoration: none; border-radius: 50px; font-weight: bold; overflow: hidden; }
+        .btn-app { background: #e60012; color: white; padding: 18px; }
+        .btn-banner-capsule { background: #fff; border: 1px solid #ddd; display: flex; flex-direction: column; padding: 0; }
+        .btn-banner-capsule img { width: 100%; height: 90px; object-fit: cover; }
+        .banner-label { padding: 10px 0; color: #d4a017; font-size: 14px; }
         .btn-web { background: #ffffff; color: #e60012; border: 2px solid #e60012; padding: 16px; }
-        .footer { margin-top: 50px; font-size: 12px; color: #999BA2; padding-bottom: 20px; }
+        .footer { margin-top: 50px; font-size: 12px; color: #999BA2; }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="https://static.wixstatic.com/media/169d86_eb3aab1cd90241d0991fb191f8b32d90~mv2.png/v1/fill/w_318,h_318,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Asset%205_4x.png" class="logo">
+        <img src="https://static.wixstatic.com/media/169d86_eb3aab1cd90241d0991fb191f8b32d90~mv2.png" class="logo">
     </div>
 
     <div class="content">
         <h2>VIP Deals Activated</h2>
-        <p>Your 70% Cashback rewards are ready.<br>Choose how you want to shop:</p>
-
+        <p>Choose how you want to shop:</p>
         <div class="btn-container">
             <a id="link-app" href="#" class="btn btn-app">OPEN IN SENHENG APP</a>
-            
-            <a id="link-catalog" href="#" class="btn btn-banner-capsule">
-                <img src="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024" alt="Untung Gila Banner">
+            <a id="id-catalog" href="#" class="btn btn-banner-capsule">
+                <img src="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024">
                 <div class="banner-label">70% CASHBACK CATALOGUE (PDF)</div>
             </a>
-            
             <a id="link-web" href="#" class="btn btn-web">CONTINUE TO WEBSITE</a>
         </div>
     </div>
 
     <div class="footer">
-        System Status: 
-        <span style="display: inline-block; width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin: 0 5px;"></span>
-        <span id="live-time" style="color: #4CAF50; font-weight: bold;">Updating...</span>
+        System Status: <span id="live-time">Updating...</span>
     </div>
 
     <script>
-        // Nitro-Fast Stealth Links (Hex Encoded)
-        const _0x1 = "https://senheng.app.link/product_id?affiliate_id=6371025";
-        const _0x2 = "https://drive.google.com/file/d/1YcXN-fP163G8JDgY9JrZmQu4408ywvky/view?usp=sharing";
-        const _0x3 = "https://www.senheng.com.my/shop?affiliate_id=6371025";
-
-        // This runs instantly as the page is created
-        (function() {
-            document.getElementById('link-app').setAttribute('href', _0x1);
-            document.getElementById('link-catalog').setAttribute('href', _0x2);
-            document.getElementById('link-web').setAttribute('href', _0x3);
-
-            // Live Time Logic
-            const times = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
-            const pick = times[Math.floor(Math.random() * times.length)];
-            document.getElementById('live-time').innerHTML = "Live (Last Update: " + pick + ")";
-        })();
+        /* PASTE YOUR SCRAMBLED (OBFUSCATED) CODE FROM THE WEBSITE HERE */
+        /* It will start with something like (function(_0x... or var _0x... */
     </script>
 </body>
 </html>
