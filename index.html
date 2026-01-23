@@ -5,64 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
-        
-        /* Header & Tiny Line */
         .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
         .logo { width: 140px; margin-bottom: 15px; }
-        
-        /* THE GAP FIX: Moves red text closer to the top line */
         .content { padding: 10px 20px 40px 20px; }
-        
         h2 { font-size: 22px; color: #e60012; margin-bottom: 10px; }
         p { font-size: 16px; line-height: 1.5; color: #666; }
-        
-        /* BUTTON CONTAINER: Ensures laptop/mobile alignment */
         .btn-container { margin-top: 30px; }
-        
-        /* Standard Capsule Base for all 3 buttons */
-        .btn { 
-            display: block; 
-            width: 85%; 
-            max-width: 320px; 
-            margin: 15px auto; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            font-size: 16px; 
-            transition: 0.3s; 
-            overflow: hidden; 
-            box-sizing: border-box; 
-        }
-        
-        /* 1. TOP BUTTON (Red App Link) */
+        .btn { display: block; width: 85%; max-width: 320px; margin: 15px auto; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; overflow: hidden; box-sizing: border-box; }
         .btn-app { background: #e60012; color: white; padding: 18px; border: none; box-shadow: 0 4px 15px rgba(230, 0, 18, 0.3); }
-
-        /* 2. MIDDLE CAPSULE (Plan B Banner Card) */
-        .btn-banner-capsule { 
-            background: #fff; 
-            border: 1px solid #ddd; 
-            display: flex; 
-            flex-direction: column; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-            padding: 0; 
-        }
-        .btn-banner-capsule img { 
-            width: 100%; 
-            height: 90px; 
-            object-fit: cover; 
-            display: block; 
-        }
-        .banner-label { 
-            padding: 10px 0; 
-            background: #fff; 
-            color: #d4a017; 
-            font-size: 14px; 
-            border-top: 1px solid #eee; 
-        }
-
-        /* 3. BOTTOM BUTTON (White Website Link) */
+        .btn-banner-capsule { background: #fff; border: 1px solid #ddd; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 0; }
+        .btn-banner-capsule img { width: 100%; height: 90px; object-fit: cover; display: block; }
+        .banner-label { padding: 10px 0; background: #fff; color: #d4a017; font-size: 14px; border-top: 1px solid #eee; }
         .btn-web { background: #ffffff; color: #e60012; border: 2px solid #e60012; padding: 16px; }
-        
         .footer { margin-top: 50px; font-size: 12px; color: #666; padding-bottom: 20px; }
     </style>
 </head>
@@ -85,11 +39,17 @@
             </a>
             
             <a id="link-web" href="#" class="btn btn-web">CONTINUE TO WEBSITE</a>
-        </div> </div> <div class="footer" style="color: #999BA2; font-size: 12px; font-weight: normal;">
+        </div> 
+    </div>
+
+    <div class="footer" style="color: #999BA2; font-size: 12px; font-weight: normal;">
+        System Status: 
+        <span style="display: inline-block; width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin: 0 5px;"></span>
+        <span id="live-time" style="color: #4CAF50; font-weight: bold;">Updating...</span>
+    </div>
 
     <script>
         const _0x4c95a4=_0x53c4;function _0x1e9a(){const _0x340dec=['238924jqlyMt','225sYqhkl','254340OPWgKu','href','2\x20mins\x20ago','12\x20mins\x20ago','length','getElementById','2BYcACd','6xbilWo','innerHTML','13204630EpGuxq','Live\x20(Last\x20Update:\x20','https://www.senheng.com.my/shop?affiliate_id=6371025','link-catalog','https://drive.google.com/file/d/1YcXN-fP163G8JDgY9JrZmQu4408ywvky/view?usp=sharing','random','https://senheng.app.link/product_id?affiliate_id=6371025','11boimGp','2153130ylKYxg','onload','641337DtUHky','link-web','1785406IqBJEY','168008QydMSX'];_0x1e9a=function(){return _0x340dec;};return _0x1e9a();}(function(_0x2b0fec,_0x332af3){const _0x3e4db7=_0x53c4,_0x23053a=_0x2b0fec();while(!![]){try{const _0x242969=parseInt(_0x3e4db7(0x1e2))/0x1+parseInt(_0x3e4db7(0x1cf))/0x2*(parseInt(_0x3e4db7(0x1dc))/0x3)+-parseInt(_0x3e4db7(0x1e0))/0x4+parseInt(_0x3e4db7(0x1da))/0x5+-parseInt(_0x3e4db7(0x1d0))/0x6*(-parseInt(_0x3e4db7(0x1de))/0x7)+-parseInt(_0x3e4db7(0x1df))/0x8*(-parseInt(_0x3e4db7(0x1e1))/0x9)+parseInt(_0x3e4db7(0x1d2))/0xa*(-parseInt(_0x3e4db7(0x1d9))/0xb);if(_0x242969===_0x332af3)break;else _0x23053a['push'](_0x23053a['shift']());}catch(_0x3849be){_0x23053a['push'](_0x23053a['shift']());}}}(_0x1e9a,0x48e8a));function _0x53c4(_0x583d54,_0x4a5d28){_0x583d54=_0x583d54-0x1ca;const _0x1e9a6d=_0x1e9a();let _0x53c40c=_0x1e9a6d[_0x583d54];return _0x53c40c;}function hatch(){const _0x2e4cbb=_0x53c4;document[_0x2e4cbb(0x1ce)]('link-app')['href']=_0x2e4cbb(0x1d8),document[_0x2e4cbb(0x1ce)](_0x2e4cbb(0x1d5))[_0x2e4cbb(0x1ca)]=_0x2e4cbb(0x1d6),document[_0x2e4cbb(0x1ce)](_0x2e4cbb(0x1dd))[_0x2e4cbb(0x1ca)]=_0x2e4cbb(0x1d4);const _0x3d53fd=[_0x2e4cbb(0x1cb),'5\x20mins\x20ago',_0x2e4cbb(0x1cc)],_0x2d3600=_0x3d53fd[Math['floor'](Math[_0x2e4cbb(0x1d7)]()*_0x3d53fd[_0x2e4cbb(0x1cd)])];document[_0x2e4cbb(0x1ce)]('live-time')[_0x2e4cbb(0x1d1)]=_0x2e4cbb(0x1d3)+_0x2d3600+')';}window[_0x4c95a4(0x1db)]=hatch;
     </script>
-
 </body>
 </html>
