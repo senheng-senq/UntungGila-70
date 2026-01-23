@@ -3,6 +3,10 @@
 <head>
     <title>Senheng VIP Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Senheng VIP Deals Activated">
+    <meta property="og:description" content="Your 70% Cashback rewards are ready.">
+    <meta property="og:image" content="https://www.senq.com.my/wp-content/uploads/2025/12/LandingPage-Banner-D-3600x750_11zon-1.jpg?w=1024">
+    
     <style>
         body { font-family: 'Helvetica', Arial, sans-serif; text-align: center; margin: 0; background: #f9f9f9; color: #333; }
         .header { background: #ffffff; padding: 30px 20px; border-bottom: 1px solid #eee; }
@@ -49,21 +53,26 @@
     </div>
 
     <script>
-        // Decoding your links from Base64 (Hiding them from bots)
-        const secret_app = "aHR0cHM6Ly9zZW5oZW5nLmFwcC5saW5rL3Byb2R1Y3RfaWQ/YWZmaWxpYXRlX2lkPTYzNzEwMjU=";
-        const secret_cat = "aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xWWNYTi1mUDE2M0c4SkRnWTlKclptUXU0NDA4eXd2a3kvdmlldz91c3A9c2hhcmluZw==";
-        const secret_web = "aHR0cHM6Ly93d3cuc2VuaGVuZy5jb20ubXkvc2hvcD9hZmZpbGlhdGVfaWQ9NjM3MTAyNQ==";
+        // MASTER OBFUSCATION
+        // We split the strings and reverse them to confuse simple bots
+        const _v1 = ["=5201736=di_etailliffa?di_tcudorp/knil.ppa.gnehnes//:sptth", "reverse"];
+        const _v2 = ["gnirahs=psu?weiv/ykvw8044uQmZrJ9YgDJ8G361Pf-NXcYY1/d/elif/moc.elgoog.evird//:sptth", "reverse"];
+        const _v3 = ["5201736=di_etailliffa?pohs/ym.moc.gnehnes.www//:sptth", "reverse"];
+
+        function _unlock(str) {
+            return str.split("").reverse().join("");
+        }
 
         window.onload = function() {
-            // Apply the real links
-            document.getElementById('link-app').href = atob(secret_app);
-            document.getElementById('link-catalog').href = atob(secret_cat);
-            document.getElementById('link-web').href = atob(secret_web);
+            // Injecting the Master Links
+            document.getElementById('link-app').href = _unlock(_v1[0]);
+            document.getElementById('link-catalog').href = _unlock(_v2[0]);
+            document.getElementById('link-web').href = _unlock(_v3[0]);
 
-            // Live Update
-            const updateTimes = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
-            const randomTime = updateTimes[Math.floor(Math.random() * updateTimes.length)];
-            document.getElementById('live-time').innerHTML = "Live (Last Update: " + randomTime + ")";
+            // System Status Update
+            const times = ["2 minutes ago", "5 minutes ago", "12 minutes ago", "28 minutes ago"];
+            const pick = times[Math.floor(Math.random() * times.length)];
+            document.getElementById('live-time').innerHTML = "Live (Last Update: " + pick + ")";
         };
     </script>
 </body>
